@@ -38,31 +38,37 @@ else m -= n;
 }
 return n;
 }
+```
 
 ### Analytical Insights
-
 The enhanced algorithm, compared to the traditional Euclidean Algorithm, exhibits superior performance in handling special cases. The conventional approach lacks efficiency when one or both integers are zero or negative. Our algorithm seamlessly addresses this by integrating the absolute function, ensuring the conversion of integers into their absolute forms for accurate computation.
 
-### Performance and Runtime Complexity
+![Alt text](<Screenshot from 2023-12-31 17-28-53.png>)
+
+## Performance and Runtime Complexity
 We conducted an exhaustive performance analysis comparing the runtime complexities of the traditional and enhanced algorithms. The traditional Euclidean Algorithm exhibits a time complexity of O (log min (a, b)), where a and b are the input integers.
 
-###Best Case Complexity:
-
+### Best Case Complexity:
 The best case occurs when either n or m is zero, or one integer is a multiple of the other. In this scenario, the algorithm immediately returns the absolute value of the non-zero integer or the smaller integer if one is a multiple of the other. This would take constant time, O (1), as it involves just a simple check and return operation.
 
 ### Average Case Complexity:
 For average cases where neither n nor m is zero and neither is a multiple of the other, the algorithm's performance becomes akin to the Euclidean Algorithm, which has a logarithmic runtime complexity, particularly O (log (min (n, m))). The loop iteratively reduces the larger number by the smaller number until both numbers become equal.
 
 ### Worst Case Complexity:
-
-
 The worst-case time complexity is still O (log (min (n, m))). This would occur in cases where neither number is zero, neither integer is a multiple of the other, and the two integers are large, requiring multiple iterations through the loop to compute the GCD. However, even in this scenario, the Euclidean Algorithm is known for its efficiency, and the iterations are reduced significantly in each step.
-
-
 
 In contrast, the enhanced algorithm maintains the same time complexity but offers improved performance in scenarios involving zero and negative integers. The incorporation of conditions to handle these edge cases does not adversely impact the overall time complexity but ensures the algorithm’s reliability and consistency in delivering accurate results.
 
-### Networking
-
-
+## Networking
 The Enhanced GCD algorithm plays a pivotal role in networking, particularly in areas like cryptography and load balancing. Its optimized computation facilitates more efficient encryption and decryption processes, enhancing security protocols. The algorithm's capability to quickly compute GCD aids in efficient data routing and traffic management, contributing to optimized network performance. In essence, the Enhanced GCD is integral for bolstering the resilience and efficiency of modern digital communication networks.
+![Networking ](/scc.png)
+
+
+## Results
+Empirical evaluations underscore the enhanced algorithm's superior performance. Through rigorous testing involving diverse sets of integers, including positive, zero, and negative integers, the algorithm consistently computed the GCD with impeccable accuracy.
+
+## Discussion
+The detailed analysis accentuates the algorithm's capability to handle complex edge cases without compromising on performance. The iterative application of the modulus operation and the conditional handling of zero and negative integers underscore its advanced logical construct.
+
+[Download PDF](img.pdf)
+
